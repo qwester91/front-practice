@@ -5,77 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harashchenia cv</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <table cellSpacing="15">
-        <tr>
-            <td> <img src="photo.jpg" alt="image not found" width="200"></td>
-            <td>
+    <div class="container">
+        <div class="info">
+            <img src="photo.jpg" alt="image not found" class="avatar">
+            <div class="info-text">
                 <h1>Dzmitry Harashchenia</h1>
-                <p><em>Java developer</em></p>
+                <p>Java developer</p>
                 <p>I love programming and learning new things</p>
-            </td>
-        </tr>
-    </table>
 
-    <hr>
+                <h4>social network</h4>
 
-    <h2>social network</h2>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/harashchenia/" target="_blank">linkedin</a></li>
-        <li><a href="https://t.me/qwester91" target="_blank">telegram</a></li>
-    </ul>
-    <hr>
-    <h2>hobbies</h2>
-    <ol>
-        <li>building</li>
-        <li>modeling</li>
-    </ol>
-    <hr>
-    <h2>expirience</h2>
-    <table>
-        <tr>
-            <th>company</th>
-            <th>position</th>
-            <th>years of work</th>
-        </tr>
-        <tr>
-            <td>programming components</td>
-            <td>java developer</td>
-            <td>2024 - current</td>
-        </tr>
-        <tr>
-            <td>breed.show</td>
-            <td>java developer</td>
-            <td>2022 - 2024</td>
-        </tr>
-    </table>
+                <a href="https://www.linkedin.com/in/harashchenia/" target="_blank">linkedin</a>
+                |
+                <a href="https://t.me/qwester91" target="_blank">telegram</a>
+            </div>
+        </div>
 
-    <hr>
-    <h2>companies</h2>
-    <a href="works.html">my works</a>
 
-    <hr>
-    <h2>contact with me</h2>
 
-    <form action="/">
-        <label for="name">your name</label>
-        <input id="name" type="text" placeholder="write your name" >
-  
-        <br>
-        <label for="email">your email</label>
-        <input id="email" type="email" placeholder="write your email" >
-        <br>
+        <div class="card bg_yellow">
+            <h2>hobbies</h2>
+            <ol class="list">
+                <li>building</li>
+                <li>modeling</li>
+            </ol>
+        </div>
+        <div class="card bg_green">
+            <h2>expirience</h2>
+            <table class="table">
+                <tr>
+                    <td>programming components</td>
+                    <td>java developer</td>
+                    <td>2024 - current</td>
+                </tr>
+                <tr>
+                    <td>breed.show</td>
+                    <td>java developer</td>
+                    <td>2022 - 2024</td>
+                </tr>
+            </table>
+        </div>
 
-        <label for="text">your message</label>
-        <br>
-        <textarea id="text" rows="3" cols="30"></textarea>
-   
-   
-        <br>
-        <input type="submit" value="send">
-    </form>
+        <div class="card bg_red">
+            <h2>companies</h2>
+            <ul class="link-list">
+                <li>
+                    <a href="breed.show">social network for proffessional breeders</a>
+                </li>
+                <li>
+                    <a href="https://www.programming-components.com/">creating complex unique software products</a>
+                </li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h2>contact with me</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">your name</label>
+                        <input id="name" type="text" placeholder="write your name">
+                    </div>
+                    <div class="form-group">
+
+                        <label for="email">your email</label>
+                        <input id="email" type="email" placeholder="write your email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="text">your message</label>
+
+                    <textarea id="text" rows="1" cols="30"></textarea>
+
+                </div>
+                
+                    <input class="btn" type="submit" value="send">
+                
+            </form>
+        </div>
+    </div>
+    </div>
 </body>
 
 </html>
